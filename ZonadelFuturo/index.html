@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zona del futuro</title>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="conection.php">
+</head>
+
+<body>
+
+    <header id="header_P">
+        <h1 class="blog-title">ZDF |</h1>
+        <h5>Zona del |uturo</h3><span id="jmdl">By JDML</span>
+        <!-- botones derecha log in, registrar, buscar -->
+        <div id="div_reg_log_search">
+            <div class="auth-buttons" id="respuesta_log">
+                
+                <button class="auth-button" id="login_boton">Log in</button>
+                
+                <button class="auth-button" data-toggle="modal" data-target="#registroModal" id="register_boton">Registrarse</button>
+                
+                <form class="search-form">
+                    <input type="text" placeholder="Buscar...">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="assets/about_us.html">Acerca de</a></li>
+            <li><a href="assets/contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="image-container">
+          <div class="image-wrapper">
+                <img class="image" src="Imagenes/imagen1.jpg" alt="Imagen 1">
+                <div class="image-caption">¿Nuevo chatGPT?</div>
+          </div>
+          <div class="image-wrapper">
+                <img class="image" src="Imagenes/imagen2.jpg" alt="Imagen 2">
+                <div class="image-caption">La robotica es el futuro</div>
+          </div>
+          <div class="image-wrapper">
+                <img class="image" src="Imagenes/imagen3.jpg" alt="Imagen 3">
+                <div class="image-caption">Nuevo descubrimiento en digitalización</div>
+          </div>
+          <div class="image-wrapper">
+                <img class="image" src="Imagenes/imagen4.jpg" alt="Imagen 4">
+                <div class="image-caption">Algoritmos sofisticados</div>
+          </div>
+          <div class="image-wrapper">
+                <img class="image" src="Imagenes/imagen5.jpg" alt="Imagen 5">
+                <div class="image-caption">Realidad aumentada. <br>Lo nuevo</div>
+          </div>
+          <div class="image-wrapper">
+                <img class="image" src="Imagenes/imagen6.jpg" alt="Imagen 6">
+                <div class="image-caption">Hacker´s .El nuevo empleo</div>
+          </div>
+        </div>
+
+      </main>
+      
+
+    <section>
+        <div class="Div_cuadro_noticias">
+            <div class="lista_noticias">
+                <div class="div_noticia">
+                    <div class="card mb-3">
+                        <img src="https://imagenes.elpais.com/resizer/TeHSdUwDjLMx0amNbVKT3Sg3c-g=/1200x0/filters:focal(1925x488:1935x498)/cloudfront-eu-central-1.images.arcpublishing.com/prisa/HUGGUF2435FJHMQ7QBXJLA6VTM.jpg" class="card-img-top" alt="Imagen del artículo">
+                        <div class="card-body">
+                            <h5 class="card-title">Doctor ChatGPT</h5>
+                            <p class="card-text">Cara y cruz de la inteligencia artificial en la consulta</p>
+                            <a href="nots/docChatgpt.html" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="div_noticia">
+                    <div class="card mb-3">
+                        <img src="https://www.eltiempo.com/files/article_main_1200/uploads/2023/06/06/647f547fe8769.jpeg" class="card-img-top" alt="Imagen del artículo">
+                        <div class="card-body">
+                            <h5 class="card-title">Chirper.AI</h5>
+                            <p class="card-text">Crean red social exclusiva para inteligencias artificiales ¿Cómo funciona?
+</p>
+                            <a href="#" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Agrega más artículos utilizando la estructura anterior -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario Registro -->
+    <div class="modal fade" id="registroModal" tabindex="-1" role="dialog" aria-labelledby="registroModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registroModalLabel">Hola!!. Unete a nosotros</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="nombreUsuario" id="usuario_registro">Nombre de Usuario</label>
+                            <input type="text" class="form-control" id="nombreUsuario" placeholder="Ingrese su nombre de usuario" maxlength="20">
+                        </div>
+                        <div class="form-group">
+                            <label for="correoElectronico" id="email_registro">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="correoElectronico" placeholder="Ingrese su correo electrónico">
+                        </div>
+                        <div class="form-group">
+                            <label for="contrasena" id="pswrd_registro">Contraseña</label>
+                            <input type="password" class="form-control" id="contrasena" placeholder="Ingrese su contraseña">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" id="btn_registroF">Registrarse</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Formulario de inicio de sesión -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Iniciar sesión</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="usuario">Usuario</label>
+                            <input type="text" class="form-control" id="logusuario" placeholder="Ingrese su nombre de usuario">
+                        </div>
+                        <div class="form-group">
+                            <label for="contrasena">Contraseña</label>
+                            <input type="password" class="form-control" id="logcontrasena" placeholder="Ingrese su contraseña">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" id="btn_login">Iniciar sesión</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p id="pfooter">&copy; 2023 ZonaDelFuturo. Todos los derechos reservados By. JMDL 197O00573.</p>
+    </footer> 
+
+    <!-- Scrpits formulario registro -->
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
